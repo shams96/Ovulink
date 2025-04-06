@@ -1,0 +1,8 @@
+This is a placeholder for the splash.png file.
+
+You need to create a 2048x2048 pixel PNG image file named "splash.png" in this directory.
+The splash screen should use the Ovulink branding colors:
+- Primary color: #FF6B8B (pink)
+- Secondary color: #7C83FD (blue)
+
+This will be used as the app's splash screen that appears when the app is loading.

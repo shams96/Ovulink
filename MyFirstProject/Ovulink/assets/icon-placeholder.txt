@@ -1,0 +1,8 @@
+This is a placeholder for the icon.png file.
+
+You need to create a 1024x1024 pixel PNG image file named "icon.png" in this directory.
+The icon should use the Ovulink branding colors:
+- Primary color: #FF6B8B (pink)
+- Secondary color: #7C83FD (blue)
+
+This will be used as the main app icon.
