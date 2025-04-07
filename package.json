@@ -1,0 +1,51 @@
+{
+  "name": "ovulink",
+  "version": "1.0.0",
+  "description": "Fertility tracking application for couples trying to conceive",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build:client": "cd client && npm run build",
+    "test": "concurrently \"cd client && npm test\" \"cd server && npm test\"",
+    "lint": "concurrently \"cd client && npm run lint\" \"cd server && npm run lint\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/ovulink.git"
+  },
+  "keywords": [
+    "fertility",
+    "health",
+    "tracking",
+    "react-native",
+    "nodejs",
+    "express",
+    "postgresql"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/ovulink/issues"
+  },
+  "homepage": "https://github.com/yourusername/ovulink#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "client/**/*.{js,jsx}": [
+      "cd client && npm run lint"
+    ],
+    "server/**/*.js": [
+      "cd server && npm run lint"
+    ]
+  }
+}
